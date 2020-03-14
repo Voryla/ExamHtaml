@@ -1,0 +1,315 @@
+@charset "utf-8";
+/*页面body*/
+body {
+    font-family: "Microsoft YaHei", simSun, "Lucida Grande", "Lucida Sans Unicode", Arial;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    display: block;
+}
+
+/* 设置a标签和button元素鼠标放上去的状态为选中*/
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+* {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*页面最外层div样式*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+/* 顶部main div*/
+.topBar-main {
+    width: 1260px;
+    height: 54px;
+}
+
+/* 顶部左侧div游戏全目录*/
+.topBar-menu-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 179px;
+    height: 54px;
+    background-color: #cf1132;
+    color: #fff;
+    text-align: center;
+    line-height: 54px;
+    overflow: hidden;
+    /* 控制光标即文字不可选中复制*/
+    cursor: default;
+}
+
+/* 顶部div游戏全目录中三个横杠样式*/
+.topBar-menu-btn i {
+    width: 25px;
+    height: 11px;
+    display: inline-block;
+    background: url("../image/i.png") no-repeat;
+    margin-right: 4px;
+}
+
+a.topBar-center {
+    width: 133px;
+    height: 44px;
+    background: url("../image/topBar-center.png") no-repeat;
+    left: 50%;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.topBar-right {
+    right: 0;
+    padding: 0;
+    margiin: 0;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 138px;
+    height: 54px;
+    overflow: hidden;
+    z-index: 9;
+    border-left: 1px solid #dadada;
+}
+
+.topBar-right a {
+    color: #333 !important;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    line-height: 52px;
+    transition: background ease-in-out .33s;
+    -webkit-transition: background ease-in-out .33s;
+}
+
+/* 右侧淡出*/
+.topBar-right a.fadeUp2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all ease-in-out .5s;
+    transform: translate3d(0, 0, 0);
+    transition: all ease-in-out .5s;
+}
+
+/* 顶部与页面之间的横线*/
+.topBar-bottom {
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+/* 页面背景*/
+.pageBackground {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 3100px;
+    overflow: hidden;
+    background: url("../image/pageBackground.jpg") 50% 0px no-repeat;
+    min-width: 1200px !important;
+}
+
+/* 主页的第一部分*/
+.part01 {
+    width: 100%;
+    height: 1090px;
+}
+
+.part01 .logo-box {
+    width: 75px;
+    height: 198px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 3;
+    display: block;
+    background: url("../image/part01left.png");
+}
+
+.part01 .gw {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    width: 189px;
+    height: 59px;
+    background: url("../image/part01right.png") center center no-repeat;
+}
+
+.part02 {
+    min-width: 1200px;
+    max-width: 1200px;
+    height: 980px;
+    margin: 0px auto;
+    position: relative;
+    overflow: visible;
+}
+
+.part02 .tit {
+    width: 379px;
+    height: 63px;
+    margin: 0px auto 20px;
+    background: url("../image/part02Title.png") center center no-repeat;
+}
+
+.part02 .news-btn {
+    width: 1040px;
+    height: 882px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.g-clr {
+    zoom: 1;
+}
+
+.part02 .news-btn .more-btn.btn01 {
+    width: 484px;
+    height: 435px;
+    position: absolute;
+    top: 10px;
+    left: 58px;
+}
+
+.part02 .news-btn .more-btn.btn02 {
+    width: 419px;
+    height: 433px;
+    position: absolute;
+    top: 10px;
+    right: 64px;
+}
+
+.part02 .news-btn .more-btn.btn03 {
+    width: 547px;
+    height: 433px;
+    position: absolute;
+    top: 450px;
+    left: -5px;
+}
+
+.part02 .news-btn .more-btn.btn04 {
+    width: 539px;
+    height: 433px;
+    position: absolute;
+    top: 450px;
+    right: -68px;
+}
+
+.part02 .news-btn .more-btn {
+    cursor: pointer;
+    transition: top 0.5s ease 0s;
+}
+
+.part03 {
+    width: 1260px;
+    height: 740px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.part03 .tit {
+    width: 329px;
+    height: 63px;
+    margin: 10px auto 40px;
+    background: url("../image/tit3.png") center center no-repeat;
+}
+
+#download {
+    box-sizing: border-box;
+    width: 347px;
+    height: 164px;
+    background: url("../image/download/downloadBar.png") center center no-repeat;
+    z-index: 20;
+    position: absolute;
+    top: 733px;
+    left: 50%;
+    margin-left: -530px;
+    transition: all 0.2s linear 0s;
+}
+
+#download .qrcode .line {
+    position: absolute;
+    left: 50%;
+    margin-left: -63.5px;
+    top: 15px;
+    width: 127px;
+    height: 10px;
+    background: url("../image/download/downloadLine.png") no-repeat;
+    animation: slide 2s linear 0s infinite alternate none running;
+}
+
+#download .qrcode {
+    width: 127px;
+    height: 127px;
+    position: relative;
+    padding: 2px;
+    background: rgb(255, 255, 255);
+    margin: 16px 2px 5px 58px;
+    float: left;
+}
+
+#download .qrcode img {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#download .button-pc {
+    width: 131px;
+    height: 132px;
+    float: left;
+    position: relative;
+    right: -6px;
+    top: 17px;
+    background: url("../image/download/downloadDesktop.png") no-repeat;
+}
+.share{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    left: 20%;
+}
+.share-txt{
+    font-family: "Microsoft YaHei", simSun, "Lucida Grande", "Lucida Sans Unicode", Arial;
+    color: white;
+}
+.part03 .feature-swiper {
+    width: 1260px;
+    height: 620px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.swiper-container-3d {
+    perspective: 1200px;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
